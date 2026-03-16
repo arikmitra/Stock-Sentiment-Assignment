@@ -29,7 +29,8 @@ Update File Paths: > Update lines 7 and 8 of the script to match your local dire
 ```r
 fear_greed_df <- read.csv("C:/YOUR_PATH/fear_greed_index.csv")
 
-`hist_data_df <- read.csv("C:/YOUR_PATH/historical_data.csv")```
+hist_data_df <- read.csv("C:/YOUR_PATH/historical_data.csv")
+```
 
 ## 🛠️ Analysis Workflow
 
