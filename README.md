@@ -31,15 +31,15 @@ Update File Paths: > Update lines 7 and 8 of the script to match your local dire
 
 **Part A: Data Health:**
 
-*Loads datasets and performs a check for missing values or duplicates.
+* Loads datasets and performs a check for missing values or duplicates.
 
 **Part B: Feature Engineering:**
 
 Aligns timestamps across datasets.
 
-*Calculates Win Rate, L/S Ratio, and PnL Volatility.
+* Calculates Win Rate, L/S Ratio, and PnL Volatility.
 
-*Segments traders into Frequent/Infrequent and High/Low Leverage (using the 75th percentile cutoff).
+* Segments traders into Frequent/Infrequent and High/Low Leverage (using the 75th percentile cutoff).
 
 **Part C: Visualization:**
 
@@ -47,11 +47,11 @@ Generates insights on PnL distribution, risk signatures (Size vs. Volatility), a
 
 ## 📊 How to Run
 
-*Open the .R script in RStudio.
+* Open the .R script in RStudio.
 
-*Adjust the file paths mentioned in the Dataset Setup.
+* Adjust the file paths mentioned in the Dataset Setup.
 
-*Select all code (Ctrl+A) and click Run.
+* Select all code (Ctrl+A) and click Run.
 
 The final processed data can be viewed via View(aligned_data).
 
