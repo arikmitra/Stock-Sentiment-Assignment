@@ -9,14 +9,16 @@ Required R Packages
 
 Run the following command in your R console to install the necessary libraries:
 
-'''r[
+'''r
 install.packages(c("tidyverse", "lubridate", "ggplot2", "dplyr"))
-]
+
 '''
 
 ## 📂 Dataset Setup
 
-The script requires two CSV files. Ensure these are saved on your local machine:
+The script requires two CSV files. 
+
+*Ensure these are saved on your local machine:
 
 fear_greed_index.csv: Daily market sentiment scores.
 
@@ -25,39 +27,38 @@ historical_data.csv: Individual trade-level data.
 **[!IMPORTANT]**
 Update File Paths: > Update lines 7 and 8 of the script to match your local directory:
 
-'''r[
+'''r
 fear_greed_df <- read.csv("C:/YOUR_PATH/fear_greed_index.csv")
-hist_data_df <- read.csv("C:/YOUR_PATH/historical_data.csv")]
+hist_data_df <- read.csv("C:/YOUR_PATH/historical_data.csv")
 '''
 
 ## 🛠️ Analysis Workflow
 
-** Part A: Data Health:**
+**Part A: Data Health:**
 
-Loads datasets and performs a check for missing values or duplicates.
+*Loads datasets and performs a check for missing values or duplicates.
 
-** Part B: Feature Engineering:**
+**Part B: Feature Engineering:**
 
 Aligns timestamps across datasets.
 
-Calculates Win Rate, L/S Ratio, and PnL Volatility.
+*Calculates Win Rate, L/S Ratio, and PnL Volatility.
 
-Segments traders into Frequent/Infrequent and High/Low Leverage (using the 75th percentile cutoff).
+*Segments traders into Frequent/Infrequent and High/Low Leverage (using the 75th percentile cutoff).
 
-** # Part C: Visualization: **
+**Part C: Visualization:**
 
 Generates insights on PnL distribution, risk signatures (Size vs. Volatility), and sentiment-based trade frequency.
 
 ## 📊 How to Run
 
-Open the .R script in RStudio.
+*Open the .R script in RStudio.
 
-Adjust the file paths mentioned in the Dataset Setup.
+*Adjust the file paths mentioned in the Dataset Setup.
 
-Select all code (Ctrl+A) and click Run.
+*Select all code (Ctrl+A) and click Run.
 
 The final processed data can be viewed via View(aligned_data).
-
 
 
 ## 🔍 Segmentation Logic
