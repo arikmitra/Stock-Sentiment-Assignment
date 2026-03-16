@@ -9,7 +9,7 @@ Required R Packages
 
 Run the following command in your R console to install the necessary libraries:
 
-'''rinstall.packages(c("tidyverse", "lubridate", "ggplot2", "dplyr"))
+'''r[install.packages(c("tidyverse", "lubridate", "ggplot2", "dplyr"))]'''
 
 ## 📂 Dataset Setup
 
@@ -24,8 +24,8 @@ historical_data.csv: Individual trade-level data.
 **[!IMPORTANT]**
 Update File Paths: > Update lines 7 and 8 of the script to match your local directory:
 
-'''rfear_greed_df <- read.csv("C:/YOUR_PATH/fear_greed_index.csv")
-'''rhist_data_df <- read.csv("C:/YOUR_PATH/historical_data.csv")
+'''r[fear_greed_df <- read.csv("C:/YOUR_PATH/fear_greed_index.csv")]'''
+'''r[hist_data_df <- read.csv("C:/YOUR_PATH/historical_data.csv")]'''
 
 ## 🛠️ Analysis Workflow
 
